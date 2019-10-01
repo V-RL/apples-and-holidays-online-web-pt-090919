@@ -31,13 +31,9 @@ end
 
 
 def add_supply_to_memorial_day(holiday_hash, supply)
-    holiday_hash.each do |a, b|
-      if a == :memorial_day
-        b.collect do |c, d| 
-          d << supply
-        
-end 
-end
+    holiday_hash[:memorial_day].each do |a, b|
+      b << supply
+      
 end
 end
 
